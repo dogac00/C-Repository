@@ -15,6 +15,7 @@ void find_position(char arr[10][10], char ch, Point* point) {
             if (arr[i][j] == ch) {
                 point->x = i;
                 point->y = j;
+                return;
             }
         }
     }
