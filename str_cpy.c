@@ -1,19 +1,38 @@
+
 #include <stdio.h>
 
-void str_cpy(char* dest, const char* src)
-{
-	for (;(*dest++ = *src++) != '\0';)
-		;
-}
+void str_cpy_1(char*, const char*);
+void str_cpy_2(char*, const char*);
+void str_cpy_3(char*, const char*);
 
 int main()
 {
-	char s1[32] = "ankara";
-	char s2[32];
+	char* src = "Hello World";
+	char dest[24];
 
-	str_cpy(s2, s1);
+	str_cpy_1(dest, src);
 
-	puts(s2);
-	
-	return 0;
+	puts(dest);
+}
+
+void str_cpy_1(char* dest, const char* src)
+{
+	for (; (*dest++ = *src++) != '\0';)
+		;
+}
+
+void str_cpy_2(char* dest, const char* src)
+{
+	while ((*dest = *src) != '\0')
+	{
+		dest++;
+		src++;
+	}
+}
+
+void str_cpy_3(char* dest, const char* src)
+{
+	for (int i = 0; (dest[i] = src[i]) != '\0'; i++)
+		;
+
 }
