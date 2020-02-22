@@ -4,13 +4,14 @@
 void str_cpy_1(char*, const char*);
 void str_cpy_2(char*, const char*);
 void str_cpy_3(char*, const char*);
+void str_cpy_4(char*, const char*);
 
 int main()
 {
 	char* src = "Hello World";
 	char dest[24];
 
-	str_cpy_1(dest, src);
+	str_cpy_4(dest, src);
 
 	puts(dest);
 }
@@ -35,4 +36,10 @@ void str_cpy_3(char* dest, const char* src)
 	for (int i = 0; (dest[i] = src[i]) != '\0'; i++)
 		;
 
+}
+
+void str_cpy_4(char* dest, const char* src)
+{
+	while (*dest++ = *src++)
+		;
 }
