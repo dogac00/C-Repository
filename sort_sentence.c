@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#define str_equals(str1, str2)     (strcmp((str1), (str2)) == 0)
+
 void run_tests();
 
 void swap(char* a, char* b) {
@@ -46,7 +48,7 @@ int main(void) {
 
 void test_result(const char* input, const char* test, const char* successString, const char* failString)
 {
-    if (strcmp(input, test) == 0)
+    if (str_equals(input, test))
         printf("%s\n", successString);
     else
         printf("%s\n", failString);
