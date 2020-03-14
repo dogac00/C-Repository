@@ -6,7 +6,7 @@
 void run_tests();
 
 void swap(char* a, char* b) {
-	const char temp = *a;
+    const char temp = *a;
     *a = *b;
     *b = temp;
 }
@@ -26,7 +26,7 @@ void bubble_sort(char arr[], const unsigned beginIndex, const unsigned endIndex)
 }
 
 void sort(char sentence[]) {
-    int beginIndex = 0;
+    unsigned beginIndex = 0;
     const unsigned length = strlen(sentence);
     for (unsigned i = 0; i < length; ++i) {
         if (sentence[i] == ' ') {
