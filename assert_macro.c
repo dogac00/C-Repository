@@ -14,3 +14,6 @@ int main()
 	
 	return 0;
 }
+
+// of course we know the function name is main
+// but the aim is to show the assert macro
