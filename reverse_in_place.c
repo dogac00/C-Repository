@@ -15,7 +15,7 @@ char* reverse_in_place(char* str)
 {
 	const unsigned length = strlen(str);
 
-	for (int i = 0; i < length / 2; i++)
+	for (unsigned i = 0; i < length / 2; i++)
 	{
 		const char temp = str[i];
 		str[i] = str[length - i - 1];
