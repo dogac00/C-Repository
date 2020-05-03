@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
+// It was a project problem in a Bogazici University lecture
+// called CMPE 150
+// I wasn't taking that course, I solved this problem for my friend
+// All code is written by me
+
 // Represents every single point in the 10 by 10 matrix
 typedef struct Point {
     int x;
