@@ -2,6 +2,7 @@
 // Sort even numbers in ascending order
 // Sort odd numbers in descending order
 // Odd numbers must come first
+// (Numbers are natural numbers)
 
 #include <stdio.h>
 #include <stdlib.h>
