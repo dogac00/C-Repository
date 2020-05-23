@@ -65,9 +65,9 @@ int main()
 	const int input3[] = { -2, -3, 4, -5 };
 	const size_t size3 = _countof(input3);
 
-	printf("Solution 1 : %d", solution(input1, size1));
-	printf("Solution 2 : %d", solution(input2, size2));
-	printf("Solution 3 : %d", solution(input3, size3));
+	printf("Solution 1 : %d\n", solution(input1, size1));
+	printf("Solution 2 : %d\n", solution(input2, size2));
+	printf("Solution 3 : %d\n", solution(input3, size3));
 
 	return 0;
 }
