@@ -5,6 +5,9 @@
 // This function checks if the given input string
 // contains all digits 0-9
 
+// Unlike the naive implementation which is O(N^2)
+// This implementation's time complexity is O(N) and uses O(1) auxilliary space
+
 #define MAX 256
 
 int alldigits(const char str[])
