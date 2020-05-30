@@ -1,28 +1,25 @@
 #include <stdio.h>
 
-char* str_cat(char* dest, char* src)
+char* mystrcat(char* dest, const char* src)
 {
-	char* temp = dest;
-	
-	while (*dest != '\0')
+	char* s = dest;
+
+	while (*dest)
 		dest++;
+	while (*dest++ = *src++)
+		;
 
-	while (*src != '\0')
-	{
-		*dest++ = *src++;
-	}
-
-	return temp;
+	return s;
 }
 
 int main()
 {
-	char s1[32] = "ankara";
-	char s2[32] = "istanbul ";
+	char s1[32] = "ist";
+	char s2[32] = "new york ";
 
-	str_cat(s2, s1);
+	mystrcat(s2, s1);
 
 	puts(s2);
-	
+
 	return 0;
 }
