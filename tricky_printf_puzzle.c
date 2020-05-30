@@ -9,7 +9,7 @@ int main()
 }
 
 // because printf function does have a side effect
-// it will first write thath number to the console
+// it will first write this number (x) to the console
 // then how many characters it printed
 // then once again how many characters it printed
 
