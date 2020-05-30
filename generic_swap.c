@@ -1,4 +1,8 @@
 
+// Inspired by my teacher Necati Ergin
+// But I tried this at home for exercise purposes
+// All code is written by me
+
 #include <stdio.h>
 
 void generic_swap(void* p1, void* p2, size_t elemSize)
