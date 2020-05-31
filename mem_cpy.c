@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-char* mem_cpy(void* dest, const void* src, unsigned n)
+char* mem_cpy(void* dest, const void* src, size_t n)
 {
-	char* p_dest = dest;
-	const char* p_src = src;
+	char* d = (char*) dest;
+	const char* s = (const char*) src;
 
 	while (n--)
-	{
-		*p_dest++ = *p_src++;
-	}
+		*d++ = *s++;
 
-	return p_dest;
+	return d;
 }
