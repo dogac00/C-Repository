@@ -48,7 +48,7 @@ bool validParentheses2(const char* strin) {
   
   while (*strin && c >= 0)
   {
-    n += (*strin == '(') - (*strin == ')');
+    c += (*strin == '(') - (*strin == ')');
     strin++;
   }
   
