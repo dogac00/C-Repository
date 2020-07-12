@@ -8,7 +8,7 @@ int any_odd(unsigned x) {
   int cnt = 0;
   
   while (x) {
-    if (cnt++ % 2 == 1 && (x & 1))
+    if ((cnt++ & 1) && (x & 1))
       return 1;
     x >>= 1;
   }
