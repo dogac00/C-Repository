@@ -12,7 +12,7 @@ char* mystrcat(char* dest, const char* src)
 	return s;
 }
 
-char* str_cat_second(char* dest, char* src)
+char* strcat_second(char* dest, const char* src)
 {
 	int i, j;
 
@@ -25,6 +25,18 @@ char* str_cat_second(char* dest, char* src)
 	return dest;
 }
 
+char* strcat_third(char* dest, const char* src)
+{
+	char* temp = dest;
+
+	while (*++dest != '\0')
+		;
+
+	while ((*dest++ = *src++) != '\0')
+		;
+
+	return temp;
+}
 
 int main()
 {
