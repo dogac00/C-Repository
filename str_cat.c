@@ -12,6 +12,20 @@ char* mystrcat(char* dest, const char* src)
 	return s;
 }
 
+char* str_cat_second(char* dest, char* src)
+{
+	int i, j;
+
+	for (i = 0; dest[i] != '\0'; ++i)
+		;
+
+	for (j = 0; (dest[i + j] = src[j]) != '\0'; ++j)
+		;
+
+	return dest;
+}
+
+
 int main()
 {
 	char s1[32] = "ist";
