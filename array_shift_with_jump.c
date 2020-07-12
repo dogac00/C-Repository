@@ -9,31 +9,26 @@ void swap(int* a, int* b) {
 	*b = temp;
 }
 
-void print_array(int arr[], int size)
+void print_array(int arr[], size_t size)
 {
-	int i = 0;
-
-	for ( ; i < size; i++)
+	for (size_t i = 0; i < size; i++)
 	{
+		if (!i)
+			printf(", ");
+		
 		printf("%d", *(arr + i));
 	}
 }
 
-int find_index(int arr [], int size, int number)
+int find_index(int arr [], size_t size, int number)
 {
-	int i = 0;
-	int result = -1;
-	
-	for (i = 0; i < size; i++)
+	for (size_t i = 0; i < size; i++)
 	{
 		if (arr[i] == number)
-		{
-			result = i;
-			break;
-		}
+			return result;
 	}
 
-	return result;
+	return -1;
 }
 
 int main()
@@ -69,4 +64,7 @@ int main()
 	}
 
 	print_array(arr, n);
+	
+	// Code has some problems
+	// I will fix it soon
 }
