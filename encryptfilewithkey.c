@@ -16,11 +16,9 @@ int is_numeric(const char* str)
  while (*str)
  {
   if (!isdigit(*str))
-   goto CHECK_TRAILING_SPACE;
+   break;
   str++;
  }
-
-CHECK_TRAILING_SPACE:
  
  while (isspace(*str))
    str++;
